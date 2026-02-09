@@ -151,46 +151,8 @@ custom_dwa_planner/
 └── README.md
 ```
 
-## Troubleshooting
-
-### Robot Tips Over
-- Reduce `max_speed`, `max_accel`, and `max_yaw_rate` in `DWAConfig`
-- Increase `max_delta_yaw_rate` for smoother turns
-
-### Robot Spins in Place
-- Increase `heading_cost_gain`
-- Decrease `max_yaw_rate`
-- Adjust `velocity_cost_gain`
-
-### Robot Collides with Obstacles
-- Increase `obstacle_cost_gain`
-- Increase `robot_radius` for larger safety margin
-- Increase `min_obstacle_dist`
-
-### No Movement
-- Check if goal is published: `ros2 topic echo /goal_pose`
-- Check if odometry is received: `ros2 topic echo /odom`
-- Verify simulation time: `ros2 param get /dwa_planner use_sim_time`
-
 ## Demo
 
-[Add screenshots or GIFs of your robot navigating here]
+<img width="1032" height="848" alt="image" src="https://github.com/user-attachments/assets/24e565dc-e961-455b-bb97-79647e117903" />
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the Apache License 2.0.
-
-## Author
-
-Your Name
-
-## Acknowledgments
-
-- Based on the Dynamic Window Approach by Fox et al. (1997)
-- TurtleBot3 simulation environment by ROBOTIS
-- ROS2 Foxy framework
-EOF
