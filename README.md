@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Custom DWA Local Planner for ROS2 Foxy
 
 A custom implementation of the Dynamic Window Approach (DWA) local planner for TurtleBot3 navigation in ROS2 Foxy.
